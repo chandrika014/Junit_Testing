@@ -1,4 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" 
+<Project xmlns="http://maven.apache.org/POM/4.0.0" 
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
                              http://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -30,16 +30,6 @@
         </dependency>
     </dependencies>
     
-    <!-- Resources configuration -->
-    <resources>
-        <resource>
-            <directory>src/main/resources</directory>
-            <includes>
-                <include>MathUtils.java</include>
-            </includes>
-        </resource>
-    </resources>
-    
     <!-- Build configuration -->
     <build>
         <plugins>
@@ -51,8 +41,13 @@
                 <configuration>
                     <source>1.8</source>
                     <target>1.8</target>
+                    <!-- Include specific source files -->
+                    <includes>
+                        <include>src/main/java/com/example/MathUtils.java</include>
+                        <include>src/test/java/com/example/MathUtilsTest.java</include>
+                    </includes>
                 </configuration>
             </plugin>
         </plugins>
     </build>
-</project>
+</Project>
