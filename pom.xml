@@ -15,6 +15,7 @@
     
     <!-- Java version compatibility -->
     <properties>
+        <java.home>/usr/java/jdk1.8.0_45/bin/javac</java.home>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
