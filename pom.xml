@@ -35,8 +35,6 @@
         <plugins>
             <!-- Compiler plugin -->
             <plugin>
-                <sourceDirectory>src</sourceDirectory>
-                <testSourceDirectory>test</testSourceDirectory>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
@@ -45,6 +43,8 @@
                     <target>1.8</target>
                     <!-- Include specific source files -->
                     <includes>
+                        <sourceDirectory>src</sourceDirectory>
+                        <testSourceDirectory>test</testSourceDirectory>
                         <include>src/main/java/com/example/MathUtils.java</include>
                         <include>src/test/java/com/example/MathUtilsTest.java</include>
                     </includes>
